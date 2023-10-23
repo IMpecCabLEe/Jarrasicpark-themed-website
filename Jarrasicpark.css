@@ -1,0 +1,76 @@
+/* Reset some default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+  }
+  
+  /* Style the image */
+  body img {
+    display: block; /* Make it a block-level element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+    height: auto; /* Maintain the aspect ratio */
+  }
+  
+  /* Rest of your existing styles... */
+  .page-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  /* Style the introduction section */
+  .intro {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the extra div elements */
+  .extra1,
+  .extra2,
+  .extra3,
+  .extra4,
+  .extra5,
+  .extra6 {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    margin-bottom: 10px;
+    /* Add any other styling you need */
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Style the sidebar */
+  .sidebar {
+    width: 30%;
+    float: right;
+    margin-top: 20px;
+  }
+  
+  /* Style the navigation in the sidebar */
+  .design-selection ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .design-selection li {
+    margin-bottom: 10px;
+  }
+  
+  .design-selection a {
+    text-decoration: none;
+    color: #333;
+  }
