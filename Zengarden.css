@@ -1,6 +1,7 @@
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
+    border: #333;
   }
 
   image{
@@ -8,19 +9,7 @@ body, h1, h2, p, ul {
     height: 100%;
   }
   
-  video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   
-  video::-webkit-media-controls {
-    display:100%;
-  }
-
   body {
     background-color: hsla(0, 0%, 42%, 0.326);
     margin-top: 10%;
@@ -33,15 +22,13 @@ body, h1, h2, p, ul {
     left: 1;
   }
   
-  /* Style the image */
   body img {
-    display: block; /* Make it a block-level element */
-    margin: 0 auto; /* Center the image horizontally */
-    width: 100%; /* Ensure the image doesn't exceed the viewport width */
-    height: auto; /* Maintain the aspect ratio */
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+    height: auto;
   }
-  
-  /* Rest of your existing styles... */
+
   .page-wrapper {
     width: 50%;
     margin: 0 auto;
@@ -49,13 +36,11 @@ body, h1, h2, p, ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10%;
   }
-  
-  /* Style the introduction section */
+
   .intro {
     margin-bottom: 10%;
   }
-  
-  /* Style the extra div elements */
+
   .extra1,
   .extra2,
   .extra3,
@@ -67,10 +52,8 @@ body, h1, h2, p, ul {
     background-color: #3498db;
     margin-bottom: 10%;
     flex-wrap: wrap;
-    /* Add any other styling you need */
   }
-  
-  /* Style the footer */
+
   footer {
     background-color: #333;
     color: #fff;
@@ -78,14 +61,12 @@ body, h1, h2, p, ul {
     padding: 15%;
   }
   
-  /* Style the sidebar */
   .sidebar {
     width: 15%;
     float: right;
     margin-top: 10%;
   }
   
-  /* Style the navigation in the sidebar */
   .design-selection ul {
     list-style: none;
     padding: 0;
@@ -99,3 +80,22 @@ body, h1, h2, p, ul {
     text-decoration: none;
     color: #333;
   }
+
+  body::before,
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-image: url('https://wallpapers.com/images/high/valorant-player-roles-305kescxw5dpup7y.webp');
+    background-size: cover;
+    z-index: -1;
+}
+
+
+body::after {
+    right: 0;
+    left: auto;
+    background-image: url('');
+}
