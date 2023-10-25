@@ -1,34 +1,58 @@
-/* Reset some default margin and padding */
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
   }
+
+  image{
+    width: 100%;
+    height: 100%;
+  }
   
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  video::-webkit-media-controls {
+    display:100%;
+  }
+
   body {
-    background-color: #f0f0f0;
-    margin-top: 20px;
+    background-color: hsla(0, 0%, 42%, 0.326);
+    margin-top: 10%;
+    border:10%;
+  }
+  
+  h1 {
+    position: absolute;
+    top: 18%;
+    left: 1;
   }
   
   /* Style the image */
   body img {
     display: block; /* Make it a block-level element */
     margin: 0 auto; /* Center the image horizontally */
-    max-width: 100%; /* Ensure the image doesn't exceed the viewport width */
+    width: 100%; /* Ensure the image doesn't exceed the viewport width */
     height: auto; /* Maintain the aspect ratio */
   }
   
   /* Rest of your existing styles... */
   .page-wrapper {
-    max-width: 960px;
+    width: 50%;
     margin: 0 auto;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10%;
   }
   
   /* Style the introduction section */
   .intro {
-    margin-bottom: 20px;
+    margin-bottom: 10%;
   }
   
   /* Style the extra div elements */
@@ -38,10 +62,11 @@ body, h1, h2, p, ul {
   .extra4,
   .extra5,
   .extra6 {
-    width: 100px;
-    height: 100px;
+    width: 15%;
+    height: 15%;
     background-color: #3498db;
-    margin-bottom: 10px;
+    margin-bottom: 10%;
+    flex-wrap: wrap;
     /* Add any other styling you need */
   }
   
@@ -50,14 +75,14 @@ body, h1, h2, p, ul {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15%;
   }
   
   /* Style the sidebar */
   .sidebar {
-    width: 30%;
+    width: 15%;
     float: right;
-    margin-top: 20px;
+    margin-top: 10%;
   }
   
   /* Style the navigation in the sidebar */
@@ -67,7 +92,7 @@ body, h1, h2, p, ul {
   }
   
   .design-selection li {
-    margin-bottom: 10px;
+    margin-bottom: 10%;
   }
   
   .design-selection a {
