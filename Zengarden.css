@@ -1,8 +1,19 @@
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
-    border: #333;
+    border: white 10px ;
+    font: bold;
   }
+
+  .header-background {
+    background-image: url('https://wallpapers.com/images/featured/dinosaur-5s0v76gstwzrhep2.jpg');
+    background-size: cover;
+    background-position: flex-start;
+    padding: 3rem 0;
+    color: #fff;
+    text-align: center;
+}
+
 
   image{
     width: 100%;
@@ -11,7 +22,7 @@ body, h1, h2, p, ul {
   
   
   body {
-    background-color: hsla(0, 0%, 42%, 0.326);
+    background-color: white(0, 0%, 42%, 0.326);
     margin-top: 10%;
     border:10%;
   }
@@ -19,53 +30,26 @@ body, h1, h2, p, ul {
   h1 {
     position: absolute;
     top: 18%;
-    left: 1;
+    left:0;
   }
   
-  body img {
-    display: block;
-    margin: 0 auto;
-    width: 100%; 
-    height: auto;
-  }
+
 
   .page-wrapper {
     width: 50%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color:white ;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 10%;
   }
 
-  .intro {
-    margin-bottom: 10%;
-  }
-
-  .extra1,
-  .extra2,
-  .extra3,
-  .extra4,
-  .extra5,
-  .extra6 {
-    width: 15%;
-    height: 15%;
-    background-color: #3498db;
-    margin-bottom: 10%;
-    flex-wrap: wrap;
-  }
-
   footer {
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    color: white;
     text-align: center;
     padding: 15%;
   }
   
-  .sidebar {
-    width: 15%;
-    float: right;
-    margin-top: 10%;
-  }
   
   .design-selection ul {
     list-style: none;
@@ -78,24 +62,25 @@ body, h1, h2, p, ul {
   
   .design-selection a {
     text-decoration: none;
-    color: #333;
+    color: white;
   }
 
   body::before,
-body::after {
+   body::after {
     content: "";
     position: fixed;
     top: 0;
     width: 50%;
-    height: 100vh;
-    background-image: url('https://wallpapers.com/images/high/valorant-player-roles-305kescxw5dpup7y.webp');
+    height: 100%;
+    background-image: url('https://wallpapers.com/images/hd/white-and-red-valorant-logo-oso76odtlza6r89g.jpg');
     background-size: cover;
     z-index: -1;
-}
-
-
-body::after {
+  }
+  
+  body::after {
     right: 0;
     left: auto;
-    background-image: url('');
-}
+    background-image: url('https://wallpapers.com/images/hd/white-and-red-valorant-logo-oso76odtlza6r89g.jpg');
+    z-index: -1;
+  }
+  
